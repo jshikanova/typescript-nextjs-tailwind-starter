@@ -13,13 +13,15 @@ type UserPageProps = {
 const UserPage = ({ item, errors }: UserPageProps) => {
   if (errors) {
     return (
-      <p>
-        <span style={{ color: 'red' }}>Error:</span> {errors}
-      </p>
+      <div className="px-2 py-1">
+        <p>
+          <span style={{ color: 'red' }}>Error:</span> {errors}
+        </p>
+      </div>
     );
   }
 
-  return <>{item && <ListDetail item={item} />}</>;
+  return <div className="px-2 py-1">{item && <ListDetail item={item} />}</div>;
 };
 
 export default UserPage;

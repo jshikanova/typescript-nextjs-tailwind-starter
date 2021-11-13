@@ -1,3 +1,7 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "tailwindCSS.emmetCompletions": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true
 }

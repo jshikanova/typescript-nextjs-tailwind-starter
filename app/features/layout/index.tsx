@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const Layout = ({ children }: { children?: ReactNode }) => (
   <div>
-    <header>
+    <header className="px-2 py-1 bg-powder-blue">
       <nav>
         <Link href="/">
           <a>Home</a>
@@ -20,8 +20,7 @@ export const Layout = ({ children }: { children?: ReactNode }) => (
       </nav>
     </header>
     {children}
-    <footer>
-      <hr />
+    <footer className="px-2 py-1 bg-onyx text-cultured">
       <span>I'm here to stay (Footer)</span>
     </footer>
   </div>

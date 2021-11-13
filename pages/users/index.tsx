@@ -11,7 +11,7 @@ type UsersPageProps = {
 };
 
 const UsersPage = ({ items }: UsersPageProps) => (
-  <>
+  <div className="px-2 py-1">
     <h1>Users List</h1>
     <p>
       Example fetching data from inside <code>getStaticProps()</code>.
@@ -23,7 +23,7 @@ const UsersPage = ({ items }: UsersPageProps) => (
         <a>Go home</a>
       </Link>
     </p>
-  </>
+  </div>
 );
 
 export const getStaticProps: GetStaticProps = async () => {

@@ -1,3 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --morning-blue: #89b0aeff;
+  --powder-blue: #bee3dbff;
+  --cultured: #faf9f9ff;
+  --apricot: #ffd6baff;
+  --onyx: #35393cff;
+}
+
 *,
 *::before,
 *::after {
@@ -15,5 +27,7 @@ html {
 }
 
 body {
+  @apply text-onyx;
+
   font-family: sans-serif;
 }
