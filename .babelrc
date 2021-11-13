@@ -1,0 +1,18 @@
+{
+  "sourceType": "module",
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@utils": ["app/utils"],
+          "@ui": ["ui"],
+          "@features": ["app/features"],
+          "@api": ["app/api"]
+        }
+      }
+    ]
+  ]
+}
