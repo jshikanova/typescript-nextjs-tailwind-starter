@@ -2,7 +2,6 @@ import React from 'react';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 
-import { Layout } from '@features/layout';
 import { sampleUserData } from '@utils';
 
 import { List } from '@ui';
@@ -12,7 +11,7 @@ type UsersPageProps = {
 };
 
 const UsersPage = ({ items }: UsersPageProps) => (
-  <Layout title="Users List | Next.js + TypeScript Example">
+  <>
     <h1>Users List</h1>
     <p>
       Example fetching data from inside <code>getStaticProps()</code>.
@@ -24,7 +23,7 @@ const UsersPage = ({ items }: UsersPageProps) => (
         <a>Go home</a>
       </Link>
     </p>
-  </Layout>
+  </>
 );
 
 export const getStaticProps: GetStaticProps = async () => {

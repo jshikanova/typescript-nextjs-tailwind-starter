@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  word-break: break-word;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}

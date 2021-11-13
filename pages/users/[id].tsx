@@ -1,7 +1,6 @@
 import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
-import { Layout } from '@features/layout';
 import { sampleUserData } from '@utils';
 
 import { ListDetail } from '@ui';
@@ -14,19 +13,13 @@ type UserPageProps = {
 const UserPage = ({ item, errors }: UserPageProps) => {
   if (errors) {
     return (
-      <Layout title="Error | Next.js + TypeScript Example">
-        <p>
-          <span style={{ color: 'red' }}>Error:</span> {errors}
-        </p>
-      </Layout>
+      <p>
+        <span style={{ color: 'red' }}>Error:</span> {errors}
+      </p>
     );
   }
 
-  return (
-    <Layout title={`${item ? item.name : 'User Detail'} | Next.js + TypeScript Example`}>
-      {item && <ListDetail item={item} />}
-    </Layout>
-  );
+  return <>{item && <ListDetail item={item} />}</>;
 };
 
 export default UserPage;

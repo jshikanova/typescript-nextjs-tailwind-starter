@@ -24,6 +24,7 @@
     "no-undef": "off",
     "comma-dangle": "off",
     "no-use-before-define": "off",
+    "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "simple-import-sort/imports": [
       1,
