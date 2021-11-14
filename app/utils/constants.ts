@@ -1,3 +1,5 @@
+import { Codepen, GitHub, Icon, Twitter } from 'react-feather';
+
 export type NavigationLink = {
   title: string;
   path: string;
@@ -21,6 +23,30 @@ export const navigationLinks: NavigationLink[] = [
     title: 'Users API',
     path: '/api/users',
     isOuter: true,
+  },
+];
+
+export type SocialLink = {
+  title: string;
+  href: string;
+  Icon: Icon;
+};
+
+export const socialLinks = [
+  {
+    title: 'GitHub',
+    href: 'https://github.com/jshikanova/typescript-nextjs-tailwind-starter',
+    Icon: GitHub,
+  },
+  {
+    title: 'Twitter',
+    href: 'https://twitter.com/jshikanova',
+    Icon: Twitter,
+  },
+  {
+    title: 'Codepen',
+    href: 'https://codepen.io/jshikanova',
+    Icon: Codepen,
   },
 ];
 

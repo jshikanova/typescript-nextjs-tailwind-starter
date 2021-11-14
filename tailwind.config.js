@@ -63,6 +63,18 @@ module.exports = {
       12: '12px',
       16: '16px',
     },
+    borderRadius: {
+      none: '0',
+      DEFAULT: '4px',
+      1: '1px',
+      2: '2px',
+      4: '4px',
+      8: '8px',
+      12: '12px',
+      16: '16px',
+      24: '24px',
+      full: '100%',
+    },
     colors: {
       'steel-teal': 'var(--steel-teal)',
       'cadet-blue': 'var(--cadet-blue)',
@@ -91,6 +103,7 @@ module.exports = {
     spacing: {
       0: '0px',
       '1px': '1px',
+      '2px': '2px',
       '4px': '4px',
       1: '8px',
       '12px': '12px',

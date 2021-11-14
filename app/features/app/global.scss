@@ -70,7 +70,7 @@ footer {
 }
 
 a {
-  @apply text-steel-teal;
+  @apply text-steel-teal transition-colors;
 
   &:hover {
     @apply text-cadet-blue;
