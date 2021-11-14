@@ -31,6 +31,7 @@
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-react": "^7.27.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "git-cz": "^4.8.0",
     "prettier": "^2.4.1",
     "prettier-plugin-tailwind": "^2.2.12",
     "stylelint": "^14.0.1",
@@ -39,6 +40,11 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint"
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
   },
   "volta": {
     "node": "16.13.0",
