@@ -6,9 +6,11 @@ type ListItemProps = {
 };
 
 export const ListItem = ({ data }: ListItemProps) => (
-  <Link href="/users/[id]" as={`/users/${data.id}`}>
-    <a>
-      {data.id}: {data.name}
-    </a>
-  </Link>
+  <li className="mb-1">
+    <Link href="/users/[id]" as={`/users/${data.id}`}>
+      <a>
+        <span className="text-morning-blue">{data.id}:</span> {data.name}
+      </a>
+    </Link>
+  </li>
 );
