@@ -1,5 +1,13 @@
 {
+  "name": "typescript-nextjs-tailwind-starter",
+  "version": "0.0.1",
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Julia Shikanova",
+    "email": "juliashikanova@yandex.ru",
+    "url": "https://github.com/jshikanova/typescript-nextjs-tailwind-starter/"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
