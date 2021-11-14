@@ -9,9 +9,7 @@ type ListProps = {
 export const List = ({ items }: ListProps) => (
   <ul>
     {items.map(item => (
-      <li key={item.id}>
-        <ListItem data={item} />
-      </li>
+      <ListItem key={item.id} data={item} />
     ))}
   </ul>
 );

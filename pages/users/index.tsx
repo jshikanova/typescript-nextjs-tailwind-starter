@@ -11,14 +11,14 @@ type UsersPageProps = {
 };
 
 const UsersPage = ({ items }: UsersPageProps) => (
-  <div className="px-2 py-1">
-    <h1>Users List</h1>
-    <p>
+  <div className="container py-5">
+    <h1 className="title600 mb-3">Users List</h1>
+    <p className="text200 mb-2">
       Example fetching data from inside <code>getStaticProps()</code>.
     </p>
-    <p>You are currently on: /users</p>
+    <p className="text200 mb-2">You are currently on: /users</p>
     <List items={items} />
-    <p>
+    <p className="title100 mt-5">
       <Link href="/">
         <a>Go home</a>
       </Link>

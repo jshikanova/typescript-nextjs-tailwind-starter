@@ -2,13 +2,20 @@ import React from 'react';
 import Link from 'next/link';
 
 const IndexPage = () => (
-  <div className="px-2 py-1">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
+  <div className="container py-5">
+    <div className="text-center">
+      <h1 className="title600 mb-3">
+        Hello Next.js{' '}
+        <span className="inline-block" style={{ transform: 'scaleX(-1)' }}>
+          👋
+        </span>
+      </h1>
+      <p className="title100">
+        <Link href="/about">
+          <a>About</a>
+        </Link>
+      </p>
+    </div>
   </div>
 );
 
